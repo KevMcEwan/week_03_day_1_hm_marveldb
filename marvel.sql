@@ -57,3 +57,16 @@ INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2',
 INSERT INTO movies (title, year, show_time) VALUES ('Spider-Man: Homecoming', 2017, '17:05');
 INSERT INTO movies (title, year, show_time) VALUES ('Thor: Ragnarok', 2017, '18:20');
 INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '20:10');
+
+UPDATE people SET name = 'Rob Wilson' WHERE name = 'Robin Willson';
+DELETE FROM movies WHERE title = 'Batman Begins';
+DELETE FROM people WHERE name = 'Nick Fury';
+INSERT INTO people (name) VALUES ('Pawel Orzechowski');
+INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '00:00');
+SELECT show_time FROM movies WHERE title = 'Guardians of the Galaxy';
+UPDATE movies SET show_time = '14:30' WHERE title = 'Guardians of the Galaxy 2';
+
+
+DELETE FROM movies WHERE id BETWEEN 3 AND 7;
+
+SELECT * FROM movies
